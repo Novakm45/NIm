@@ -7,7 +7,7 @@ var again = true;
 if(again = true){
 var count = 0;
 var turns = 0;
-var next = games/2;
+var next = games % 2;
 if(next == 0){
 	turn = cpuTurn;
 }
