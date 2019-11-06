@@ -1,44 +1,46 @@
-/*Nim Simple By Max*/
+/* /*Nim Simple By Max*/ 
 
 /*global Variables */
 var games = 0;
 var again = true;
 /* main */
-if(again = true){
-var count = 0;
-var turns = 0;
-var next = games % 2;
-if(next == 0){
-	turn = cpuTurn;
+while(again = true){
+	var count = 0;
+	var turns = 0;
+	var next = games % 2;
+	if(next == 0){
+		turn = cpuTurn();
+	}
+	else turn =  pcTurn();
+	count+=turn;
+	if(count >= 21){
+		declareWinner(next);
+	}
+	else{
+		turns++;
+	}
+	prompt("want to play again? y for yes");
+		if(prompt == "y"){
+	    again = true;
+		}
+		else {
+			again = false;
+		}
+	//Next Game Loop
+	while(playAgain() == true){
+		games++;
+	}
+	if else{
+		return playAgain false;
+	}
 }
-else turn =  pcTurn;
-count+=turn;
-if(count >= 21){
-	declareWinner(next):
+	//Next turn
+if(next == 0){
+	var answer = Math.random(math.floor());	
+	turns = answer;
+	return next true;
 }
 
-else{
-	turns++;
-}
-prompt("want to play again? y for yes");
-	if(prompt == "y"){
-		return true;
-	}
-	else return false;
-}
-else return false
-//Next Game Loop
-while(again() == true){
-	games++;
-	return true;
-}
-else return false;
-//Next turn
-if(next == 0){
-	var answer = Math.random(math.floor());
-	turns = answer;
-	return true;
-}
 /* Functions */
 function nextSwitch(){
 	if(next = 0){
@@ -73,27 +75,6 @@ Function pcTurn(){
 			return prompt;
 		}
 	else return false;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
